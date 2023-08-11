@@ -10,7 +10,9 @@ const TagView = ({ tag, onAddChild, onToggle, onUpdateData, onRename }) => {
   };
 
   return (
+
     <div className="tag">
+
       <div className="tag-header">
         <span className="toggle" onClick={() => onToggle(tag)}>
           {tag.collapsed ? '>' : 'v'}
@@ -57,6 +59,7 @@ const TagView = ({ tag, onAddChild, onToggle, onUpdateData, onRename }) => {
           <button className='btn btn-warning' onClick={handleAddChild}>Add Child</button>
         </div>
       )}
+      
     </div>
   );
 };
